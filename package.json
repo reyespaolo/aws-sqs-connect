@@ -1,6 +1,6 @@
 {
   "name": "aws_sqs_service",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "sqs/index.js",
   "scripts": {
@@ -20,5 +20,5 @@
     "aws-sdk": "^2.101.0",
     "debug": "^2.1.0"
   },
-  "homepage": "https://github.com/reyespaolo/aws_sqs-connect#readme"
+  "homepage": "https://github.com/reyespaolo/aws-sqs-connect#readme"
 }
