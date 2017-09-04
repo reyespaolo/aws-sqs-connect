@@ -1,6 +1,6 @@
 {
   "name": "aws_sqs_service",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "sqs/index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reyespaolo/aws_sqs-connect.git"
+    "url": "git+https://github.com/reyespaolo/aws-sqs-connect.git"
   },
   "author": "Paolo Brainard M. Reyes <xreyes.paolox@gmail.com> (http://360logix.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/reyespaolo/aws_sqs-connect/issues"
+    "url": "https://github.com/reyespaolo/aws-sqs-connect/issues"
   },
   "dependencies": {
     "async": "^2.0.1",
