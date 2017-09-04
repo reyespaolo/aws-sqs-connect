@@ -1,8 +1,8 @@
 {
-  "name": "aws_sqs-connect",
-  "version": "1.0.0",
+  "name": "aws_sqs_service",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "sqs/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
