@@ -61,14 +61,14 @@ ConsumerData.initialize = function (options) {
   return new ConsumerData(options);
 };
 
-ConsumerData.prototype.deleteSQSMessage = function (message, cb) {
+ConsumerData.prototype.deleteSQSMessage = function (ReceiptHandle, cb) {
   var deleteParams = {
     QueueUrl: this.queueUrl,
-    ReceiptHandle: message.ReceiptHandle
+    ReceiptHandle: ReceiptHandle
   };
   this.sqs.deleteMessage(deleteParams, function (err) {
     if (err) return cb(new SQSError('SQS delete message failed: ' + err.message));
-    cb('deleted \n' + message.Body + "\n\n");
+    cb('deleted \n' + ReceiptHandle + "\n\n");
   });
 
 };

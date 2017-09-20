@@ -2,6 +2,8 @@ const ConsumeData = require('./sqs');
 const Config = require('./config')
 const AWS = require('aws-sdk');
 
+
+
 AWS.config.update({
   region: Config.region,
   accessKeyId: Config.accessKeyId,
@@ -35,5 +37,7 @@ function deleteMessage(message){
     console.log(message)
   })
 }
+
+
 
 app.start();
