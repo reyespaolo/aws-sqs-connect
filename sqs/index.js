@@ -134,17 +134,6 @@ ConsumerData.prototype._processMessage = function (message, cb) {
 
       }
     }
-
-    // function handleMessage(done) {
-    //   try {
-    //     consumer.handleMessage(message, done);
-    //   } catch (err) {
-    //     done(new Error('Unexpected message handler failure: ' + err.message));
-    //   }
-    // }
-    // function deleteMessage(done) {
-    //   consumer._deleteMessage(message, done);
-    // }
   ], function (err) {
     if (err) {
       if (err.name === SQSError.name) {
@@ -169,19 +158,5 @@ ConsumerData.prototype._processMessage = function (message, cb) {
     cb();
   });
 };
-
-// ConsumerData.prototype._deleteMessage = function (message, cb) {
-//   var deleteParams = {
-//     QueueUrl: this.queueUrl,
-//     ReceiptHandle: message.ReceiptHandle
-//   };
-//   this.sqs.deleteMessage(deleteParams, function (err) {
-//     if (err) return cb(new SQSError('SQS delete message failed: ' + err.message));
-//     cb();
-//   });
-// };
-
-
-
 
 module.exports = ConsumerData;

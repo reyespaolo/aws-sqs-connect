@@ -1,6 +1,6 @@
 {
   "name": "aws_sqs_service",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "sqs/index.js",
   "scripts": {
